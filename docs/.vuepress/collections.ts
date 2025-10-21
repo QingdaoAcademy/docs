@@ -6,6 +6,11 @@ export default defineCollections([
     dir: 'git',
     linkPrefix: '/git',
     title: 'Git',
-    sidebar: 'auto',
+    sidebar: [
+      'introduction-of-git',
+      'git-basics',
+      'git-with-vscode',
+      'github-overview',
+    ]
   }),
 ]);
