@@ -51,7 +51,9 @@ export default defineUserConfig({
         timeStyle: 'short',
       },
     },
-    contributors: true,
+    contributors: {
+      mode: 'block',
+    },
     changelog: true,
 
     cache: 'filesystem',
