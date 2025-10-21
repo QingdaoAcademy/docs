@@ -7,7 +7,9 @@
   "author": "honahec <honahec@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "vuepress build docs --clean-cache --clean-temp",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "dev": "vuepress dev docs",
     "docs:dev": "vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
     "docs:preview": "http-server docs/.vuepress/dist",
