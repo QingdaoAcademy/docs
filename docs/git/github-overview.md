@@ -138,7 +138,7 @@ git push --set-upstream origin main
 
 ![](../images/h0r3hpd9/image-4.png)
 
-有关更多的同步选项和冲突管理，请见 [VS Code 远程管理](/zzeqw9x5/#远程管理)。
+有关更多的同步选项和冲突管理，请见 [VS Code 远程管理](./git-with-vscode.md#远程管理)。
 
 ## 克隆 GitHub 仓库
 
