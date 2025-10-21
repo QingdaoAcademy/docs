@@ -39,6 +39,7 @@ jobs:
         run: |-
           pnpm run docs:build
           > docs/.vuepress/dist/.nojekyll
+          echo "docs.yxzl.dev" > docs/.vuepress/dist/CNAME
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
