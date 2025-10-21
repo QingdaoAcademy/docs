@@ -289,7 +289,11 @@ Git 为解决本地仓库与远程仓库的冲突，推出了 `merge` 和 `rebas
 
 而在 vscode 中使用 merge 是极为容易且直观的，故请前往 [在 VSCode 中使用 Git 的冲突管理部分](./git-with-vscode.md#冲突管理) 查看。
 
-> 恭喜你，你已经学会了 Git 的基本用法！
+---
+
+恭喜你，你已经学会了 Git 的基本用法！
+
+接下来，你将学习如何在 VSCode 中使用 Git。
 
 [+terminal]:
 
