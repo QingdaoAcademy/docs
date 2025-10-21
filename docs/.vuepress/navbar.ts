@@ -1,12 +1,14 @@
-/**
- * @see https://theme-plume.vuejs.press/config/navigation/ 查看文档了解配置详情
- *
- * Navbar 配置文件，它在 `.vuepress/plume.config.ts` 中被导入。
- */
-
-import { defineNavbarConfig } from "vuepress-theme-plume";
+import { defineNavbarConfig } from 'vuepress-theme-plume';
 
 export default defineNavbarConfig([
-  { text: "首页", link: "/" },
-  { text: "文档", link: "/post/" },
+  { text: '首页', link: '/' },
+  { text: 'Git', link: '/git/' },
+  {
+    text: '贡献者',
+    items: [
+      { text: 'Honahec', link: 'https://honahec.cc/' },
+      { text: '异想之旅', link: 'https://blog.yxzl.dev/' },
+      { text: '程家麒', link: 'https://modenc.top/' },
+    ],
+  },
 ]);

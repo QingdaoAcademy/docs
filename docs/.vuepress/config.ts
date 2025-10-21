@@ -9,24 +9,24 @@
  * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会被覆盖
  */
 
-import { viteBundler } from "@vuepress/bundler-vite";
-import { defineUserConfig } from "vuepress";
-import { plumeTheme } from "vuepress-theme-plume";
+import { viteBundler } from '@vuepress/bundler-vite';
+import { defineUserConfig } from 'vuepress';
+import { plumeTheme } from 'vuepress-theme-plume';
 
 export default defineUserConfig({
-  base: "/",
-  lang: "zh-CN",
-  title: "docs",
-  description: "",
+  base: '/',
+  lang: 'zh-CN',
+  title: '技术文档',
+  description: '',
 
   head: [
     // 配置站点图标
     [
-      "link",
+      'link',
       {
-        rel: "icon",
-        type: "image/png",
-        href: "https://theme-plume.vuejs.press/favicon-32x32.png",
+        rel: 'icon',
+        type: 'image/png',
+        href: 'https://theme-plume.vuejs.press/favicon-32x32.png',
       },
     ],
   ],
@@ -36,34 +36,26 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+    hostname: 'https://docs.yxzl.dev',
 
     /* 文档仓库配置，用于 editLink */
-    docsRepo: "QingdaoAcademy/docs",
-    docsDir: "docs",
-    docsBranch: "main",
+    docsRepo: 'QingdaoAcademy/docs',
+    docsDir: 'docs',
+    docsBranch: 'main',
 
     /* 页内信息 */
     editLink: true,
     lastUpdated: {
       formatOptions: {
-        dateStyle: "short",
-        timeStyle: "short",
+        dateStyle: 'short',
+        timeStyle: 'short',
       },
     },
     contributors: true,
     changelog: true,
 
-    /**
-     * 编译缓存，加快编译速度
-     * @see https://theme-plume.vuejs.press/config/basic/#cache
-     */
-    cache: "filesystem",
+    cache: 'filesystem',
 
-    /**
-     * 为 markdown 文件自动添加 frontmatter 配置
-     * @see https://theme-plume.vuejs.press/config/basic/#autofrontmatter
-     */
     autoFrontmatter: {
       permalink: true, // 是否生成永久链接
       createTime: true, // 是否生成创建时间
@@ -71,7 +63,7 @@ export default defineUserConfig({
     },
 
     /* 本地搜索, 默认启用 */
-    search: { provider: "local" },
+    search: { provider: 'local' },
 
     /**
      * Algolia DocSearch
@@ -105,7 +97,7 @@ export default defineUserConfig({
     markdown: {
       abbr: true, // 启用 abbr 语法  *[label]: content
       annotation: true, // 启用 annotation 语法  [+label]: content
-      mark: "lazy",
+      mark: 'lazy',
       pdf: true, // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
       caniuse: true, // 启用 caniuse 语法  @[caniuse](feature_name)
       plot: true, // 启用隐秘文本语法 !!xxxx!!
@@ -113,7 +105,7 @@ export default defineUserConfig({
       youtube: true, // 启用嵌入 youtube视频 语法 @[youtube](video_id)
       artPlayer: true, // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
       audioReader: true, // 启用嵌入音频朗读功能 语法 @[audioReader](url)
-      icon: { provider: "iconify" }, // 启用内置图标语法  ::icon-name::
+      icon: { provider: 'iconify' }, // 启用内置图标语法  ::icon-name::
       table: true, // 启用表格增强容器语法 ::: table
       codepen: true, // 启用嵌入 codepen 语法 @[codepen](user/slash)
       replit: true, // 启用嵌入 replit 语法 @[replit](user/repl-name)
@@ -130,7 +122,7 @@ export default defineUserConfig({
       },
       math: {
         // 启用数学公式
-        type: "katex",
+        type: 'katex',
       },
       chartjs: true, // 启用 chart.js
       echarts: true, // 启用 ECharts
@@ -143,41 +135,23 @@ export default defineUserConfig({
         size: true, // 启用图片大小
       },
       // include: true,      // 在 Markdown 文件中导入其他 markdown 文件内容
-      imageSize: "local", // 启用 自动填充 图片宽高属性，避免页面抖动
+      imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
     },
-
-    /**
-     * 水印
-     * @see https://theme-plume.vuejs.press/guide/features/watermark/
-     */
-    // watermark: true,
 
     /**
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
     comment: {
-      provider: "Giscus", // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+      provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
       comment: true,
-      repo: "QingdaoAcademy/docs",
-      repoId: "R_kgDOQGR0TQ",
-      category: "Announcements",
-      categoryId: "DIC_kwDOQGR0Tc4Cw48M",
-      mapping: "pathname",
+      repo: 'QingdaoAcademy/docs',
+      repoId: 'R_kgDOQGR0TQ',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOQGR0Tc4Cw48M',
+      mapping: 'pathname',
       reactionsEnabled: true,
-      inputPosition: "top",
+      inputPosition: 'top',
     },
-
-    /**
-     * 资源链接替换
-     * @see https://theme-plume.vuejs.press/guide/features/replace-assets/
-     */
-    // replaceAssets: 'https://cdn.example.com',
-
-    /**
-     * 加密功能
-     * @see https://theme-plume.vuejs.press/guide/features/encryption/
-     */
-    // encrypt: {},
   }),
 });
