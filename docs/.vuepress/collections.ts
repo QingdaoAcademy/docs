@@ -8,6 +8,7 @@ export default defineCollections([
     title: 'Git',
     sidebar: [
       'introduction-of-git',
+      'git-installation',
       'git-basics',
       'git-with-vscode',
       'github-overview',
