@@ -8,7 +8,7 @@ export default defineNavbarConfig([
     items: [
       { text: 'Honahec', link: 'https://honahec.cc/' },
       { text: '异想之旅', link: 'https://blog.yxzl.dev/' },
-      { text: '程家麒', link: 'https://modenc.top/' },
+      { text: 'modenicheng', link: 'https://modenc.top/' },
     ],
   },
 ]);
