@@ -22,13 +22,13 @@ config:
       -
         title: 我们是谁？
         icon: 🧑‍🎓
-        details: 本文档主要由青岛中学毕业的校友编写和维护
+        details: 本文档主要由青岛中学毕业的校友编写和维护。
       -
         title: 文档包含什么？
         icon: 📄
-        details: 任何入门技术时可能遇到的问题：命令行、Git、Python 等等
+        details: 任何入门技术时可能遇到的问题：命令行、Git、Python 等。
       -
         title: 写作目的？
         icon: 📍
-        details: 我们不想一遍遍回答同样的问题……
+        details: 我们不想一遍遍回答同样的问题……所以我们选择将答案写下来供大家阅读。
 ---
