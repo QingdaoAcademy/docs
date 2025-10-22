@@ -2,6 +2,7 @@ import { defineNavbarConfig } from 'vuepress-theme-plume';
 
 export default defineNavbarConfig([
   { text: '首页', link: '/' },
+  { text: '命令行', link: '/cli/' },
   { text: 'Git', link: '/git/' },
   {
     text: '贡献者',

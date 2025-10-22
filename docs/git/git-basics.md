@@ -121,7 +121,9 @@ print("Hello World!")
 git commit -m "Whatever you want to note."
 ```
 
-> [!NOTE] 
+其中，`-m` 后面的引号中的内容是你本次提交的消息（你可以理解为备注），通常用于标记本次修改的主要内容。如果你不加 `-m` 而直接执行 `git commit`，你将被引导使用 vim 来编辑消息，请不要因为看到陌生页面而惊慌。
+
+> [!NOTE]
 >
 > 更为规范的，我们会统一备注的格式，例如：`feat(theme): add something.` 意为为主题模块新增了xxx功能。
 >

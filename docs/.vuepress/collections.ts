@@ -10,8 +10,19 @@ export default defineCollections([
       'introduction-of-git',
       'git-installation',
       'git-basics',
-      'git-with-vscode',
       'github-overview',
-    ]
+      'git-with-vscode',
+    ],
+  }),
+  defineCollection({
+    type: 'doc',
+    dir: 'cli',
+    linkPrefix: '/cli',
+    title: '命令行',
+    sidebar: [
+      '',
+      'launch-cli',
+      'path',
+    ],
   }),
 ]);
