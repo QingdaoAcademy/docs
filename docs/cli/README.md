@@ -6,7 +6,7 @@ permalink: /cli/
 
 用最简单的方式解释，请见下图：
 
-![](images/image.png)
+<!-- ![](images/image.png) -->
 
 命令行（Command Line，简称 CLI）是一个允许你通过简短的命令完成诸多软件操作和系统设置的地方。
 
