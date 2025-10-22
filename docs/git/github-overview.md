@@ -35,7 +35,7 @@ echo     User git
 
 @tab MacOS
 
-在启动台或 SpotLight（通过 `Command + 空格` 打开）搜索 Terminal 并打开。
+在启动台或 SpotLight（通过 `command + 空格` 打开）搜索 Terminal 并打开。
 
 在命令行界面中执行如下命令（粘贴并回车）：
 
