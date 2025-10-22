@@ -4,6 +4,7 @@ export default defineNavbarConfig([
   { text: '首页', link: '/' },
   { text: '命令行', link: '/cli/' },
   { text: 'Git', link: '/git/' },
+  { text: 'Python', link: 'https://python.yxzl.dev/' },
   {
     text: '贡献者',
     items: [

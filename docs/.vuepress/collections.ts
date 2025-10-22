@@ -7,6 +7,7 @@ export default defineCollections([
     linkPrefix: '/git',
     title: 'Git',
     sidebar: [
+      '',
       'introduction-of-git',
       'git-installation',
       'git-basics',
@@ -20,9 +21,10 @@ export default defineCollections([
     linkPrefix: '/cli',
     title: '命令行',
     sidebar: [
-      '',
-      'launch-cli',
-      'path',
+      {
+        text: '基础内容',
+        items: ['', 'launch-cli', 'path'],
+      },
     ],
   }),
 ]);
