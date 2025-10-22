@@ -60,7 +60,7 @@ git --version
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
 
-  这是一个 Homebrew 官方安装脚本，按照脚本指引操作即可
+  这是一个 Homebrew 官方安装脚本，按照脚本指引操作即可。
 
   ==否则==，你可以使用清华镜像源下载[+tuna]或者自行联系你的朋友获取相关工具。
 
@@ -70,12 +70,13 @@ git --version
   echo 'export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"' >> ~/.zshrc
   echo 'export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"' >> ~/.zshrc
   echo 'export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"' >> ~/.zshrc
+  echo 'export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"' >> ~/.zshrc
   source ~/.zshrc
 
-  git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
-  /bin/bash brew-install/install.sh
-  rm -rf brew-install
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
+
+  之后按照脚本指引操作即可。
 
   2. 使用 Homebrew 安装 Git
 
