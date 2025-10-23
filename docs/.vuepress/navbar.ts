@@ -3,6 +3,7 @@ import { defineNavbarConfig } from 'vuepress-theme-plume';
 export default defineNavbarConfig([
   { text: '首页', link: '/' },
   { text: '命令行', link: '/cli/' },
+  { text: 'VS Code', link: '/vscode/' },
   { text: 'Git', link: '/git/' },
   { text: 'Python', link: 'https://python.yxzl.dev/' },
   {

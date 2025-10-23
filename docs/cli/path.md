@@ -18,6 +18,10 @@ permalink: /cli/1wlv9oip/
 
 例如：`C:\Users\yxzlwz\Desktop`
 
+::: note
+在某些情况下，我们也会在 Windows 系统中使用正斜杠 `/` 作为分隔符。
+:::
+
 @tab MacOS 和 Linux
 
 在 MacOS 和 Linux 系统中，目录路径以根目录 `/` 开头，使用正斜杠 `/` 作为分隔符。
@@ -27,11 +31,9 @@ permalink: /cli/1wlv9oip/
 - `/Users/yxzlwz/Desktop`
 - `/home/yxzlwz/Desktop`
 
-::: note
-这样以盘符或斜杠开头的路径称为“绝对路径”（Absolute Path），表示从文件系统的根目录开始的完整路径。
-:::
-
 ::::
+
+这样以盘符或斜杠开头的路径称为“绝对路径”（Absolute Path），表示从文件系统的根目录开始的完整路径。
 
 ## 如何找到文件的目录？
 
@@ -95,9 +97,12 @@ permalink: /cli/1wlv9oip/
 特别地，对于 Windows 系统：
 
 - 如果你想切换的路径在不同的盘符，你需要先输入目标盘符字母加冒号（例如 `D:`），回车，然后再使用 `cd` 命令切换目录。
+
+  ![](../images/1761190201794.png)
+
 - 如果你希望 cmd 的工作目录设置为你目前已经打开的文件夹，你可以直接单击资源管理器上方的目录，然后删除原本的所有内容后，输入 `cmd` 并按下回车键即可。
 
-    ![](../images/1761130900286.png)
+  ![](../images/1761190088241.gif)
 
 ## 相对目录
 
@@ -112,7 +117,7 @@ permalink: /cli/1wlv9oip/
   - otheruser/
 :::
 
-假设我们以 `yxzlwz` 的身份打开命令行，默认打开用户的主目录 `/Users/yxzlwz`。
+假设我们以 `yxzlwz` 的身份打开命令行，默认打开用户的主目录 `/Users/yxzlwz`（上图中加粗内容）。
 
 此时，如果我们想要进入主目录下的 `Desktop` 目录，我们可以使用命令 `cd Desktop`。`Desktop` 不是以盘符或斜杠开头的绝对路径，而是表示目标目录相对于当前目录的位置，这种路径称为“相对路径”（Relative Path）。如本例中，系统便会在 `/Users/yxzlwz` 目录下寻找 `Desktop` 目录。
 

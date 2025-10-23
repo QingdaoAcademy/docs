@@ -27,4 +27,20 @@ export default defineCollections([
       },
     ],
   }),
+  defineCollection({
+    type: 'doc',
+    dir: 'vscode',
+    linkPrefix: '/vscode',
+    title: 'VS Code',
+    sidebar: [
+      {
+        text: '通用',
+        items: ['', 'install', 'folder-and-explorer', 'cli'],
+      },
+      {
+        text: '专门配置',
+        items: ['python'],
+      },
+    ],
+  }),
 ]);
