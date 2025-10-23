@@ -4,6 +4,8 @@ createTime: 2025/10/23 10:54:46
 permalink: /vscode/4uja7z83/
 ---
 
+阅读本节内容前，请确保你已经安装了 Python 环境。否则，请阅读[Python 环境安装 | Python 入门文档](https://python.yxzl.dev/jvvxy8eb/)。
+
 ## 安装 Python 插件
 
 打开插件安装界面，然后搜索 `Python`，找到由 Microsoft 出品的插件后点击安装：

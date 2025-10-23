@@ -1,5 +1,5 @@
 ---
-title: 命令行工具
+title: VS Code 终端
 createTime: 2025/10/23 11:33:31
 permalink: /vscode/34n3lfdz/
 ---

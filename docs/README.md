@@ -10,9 +10,9 @@ config:
       tagline: 一个尝试帮助新手快速上手编程和信息技术的文档
       image: null
       actions:
-        - theme: brand
-          text: 文档
-          link: /post/
+        # - theme: brand
+        #   text: 文档
+        #   link: /post/
         - theme: alt
           text: GitHub →
           link: https://github.com/QingdaoAcademy/docs
