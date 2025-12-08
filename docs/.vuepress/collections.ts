@@ -17,6 +17,13 @@ export default defineCollections([
   }),
   defineCollection({
     type: 'doc',
+    dir: 'dictionary',
+    linkPrefix: '/dictionary',
+    title: '名词解释',
+    sidebar: 'auto',
+  }),
+  defineCollection({
+    type: 'doc',
     dir: 'cli',
     linkPrefix: '/cli',
     title: '命令行',
