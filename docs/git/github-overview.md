@@ -47,6 +47,12 @@ mkdir -p ~/.ssh && echo -e "Host github.com\n    Hostname ssh.github.com\n    Po
 
 关于这一配置的更多信息，参阅[在 HTTPS 端口使用 SSH - GitHub 文档](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)。
 
+## 注册 GitHub 账号
+
+前往<https://github.com/signup>，按照提示完成注册流程。
+
+建议使用 Gmail 邮箱注册，使用 163 等国内邮箱可能会出现无法通过人机验证的问题。
+
 ## 配置 SSH Key
 
 配置 SSH Key 是将代码上传到远程服务器的必要步骤。
@@ -58,7 +64,7 @@ mkdir -p ~/.ssh && echo -e "Host github.com\n    Hostname ssh.github.com\n    Po
 
 按下快捷键 `Win + R`，在打开的“运行”窗口中输入 cmd 并点击确定，打开命令行窗口。
 
-在命令行中==依次==执行如下命令（在执行第一行命令时会有若干次提示输入，请==不断回车跳过相关输入==）：
+在命令行中==依次==、==逐行==执行如下命令（在执行第一行命令时请==删除提示文本、输入你自己的邮箱==；按下回车后会有若干次提示输入，请==不断回车跳过相关输入==）：
 
 ```bash
 ssh-keygen -t ed25519 -C "在此输入你的邮箱"
@@ -76,7 +82,7 @@ type id_ed25519.pub
 
 在启动台或 SpotLight（通过 `Command + 空格` 打开）搜索 Terminal 并打开。
 
-在命令行界面中，==依次==执行如下命令（在执行第一行命令时会有若干次提示输入，请==不断回车跳过相关输入==）：
+在命令行界面中，==依次==、==逐行==执行如下命令（在执行第一行命令时请==删除提示文本、输入你自己的邮箱==；按下回车后会有若干次提示输入，请==不断回车跳过相关输入==）：
 
 ```bash
 ssh-keygen -t ed25519 -C "在此输入你的邮箱"
@@ -93,7 +99,7 @@ cat ~/.ssh/id_ed25519.pub
 
 原则上讲，Linux 的操作与 Mac 相同。
 
-**更加原则上讲，如果你正在使用 Linux，你不该阅读这部分 Git 教程。**
+**更加原则上讲，如果你已经在使用 Linux，你不应该需要阅读这部分 Git 教程。**
 
 :::
 
@@ -125,7 +131,7 @@ cat ~/.ssh/id_ed25519.pub
 >
 > 接下来的步骤涉及 Git 命令，请先阅读前置章节 [Git 的基础操作](./git-basics.md)
 
-打开命令行工具并进入你的本地仓库所在目录，执行如下代码：
+打开命令行工具并进入你==已有的本地仓库所在目录==，执行如下代码：
 
 ```bash
 git remote add origin 你的仓库地址

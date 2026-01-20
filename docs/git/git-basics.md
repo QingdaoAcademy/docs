@@ -125,6 +125,17 @@ print("Hello World!")
 
 ## 提交更改
 
+### 在第一次提交前
+
+Git 需要你配置用户名和邮箱，以便在提交时记录作者信息。你可以使用以下命令进行配置。==请逐行运行以便修改内容。==用户名建议纯英文、与 GitHub 昵称一致；邮箱建议使用你注册 GitHub 时使用的邮箱。
+
+```bash
+git config --global user.name "在此输入用户名"
+git config --global user.email "在此输入邮箱"
+```
+
+### 提交更改
+
 你可以使用 `git commit` 命令将文件从暂存区提交到 Git 仓库中，并创建一个新的版本[+version]。
 
 ```bash
