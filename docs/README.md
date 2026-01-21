@@ -13,44 +13,44 @@ config:
     features:
       -
         title: 名词解释
-        icon: 📖
+        icon: streamline-color:dictionary-language-book
         details: 一些常见术语的解释
         link: /dictionary/
       -
         title: 命令行工具（CLI）
-        icon: 💻
+        icon: icon-park:terminal
         details: 学习计算机科学的必备技能
         link: /cli/
       -
         title: Git & GitHub
-        icon: 🦊
+        icon: skill-icons:git
         details: 版本控制系统入门
         link: /git/
       -
         title: VS Code
-        icon: 📝
+        icon: devicon:vscode
         details: 现代、流行的代码编辑器
         link: /vscode/
       -
         title: 环境配置
-        icon: ⚙️
+        icon: file-icons:dotenv
         details: 配置开发环境的指南
         link: /env-configuration/
       -
         title: Python
-        icon: 🐍
+        icon: material-icon-theme:python
         details: 编程入门首选语言
         link: https://python.yxzl.dev/
         linkText: 前往 Python 入门文档
       -
         title: 北理工大学课程笔记
-        icon: 🎓
+        icon: 📒
         details: 完善的线性代数笔记（？）
         link: https://modenc.top/course/tbogh5v1/
         linkText: 前往 Modenc
       -
         title: Linear Algebra
-        icon: 📚
+        icon: ph:matrix-logo
         details: Lecture notes for Linear Algebra of NYU Shanghai
         link: https://yxzl.dev/en/linear_algebra/
         linkText: 前往 异想之旅のBlog
