@@ -3,7 +3,7 @@ import navbar from './navbar';
 import collections from './collections';
 
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/logo.png',
 
   appearance: true,
 
@@ -16,9 +16,7 @@ export default defineThemeConfig({
     license: 'CC-BY-NC-SA-4.0',
   },
 
-  // prevPage: true,   // 是否启用上一页链接
-  // nextPage: true,   // 是否启用下一页链接
-  createTime: true, // 是否显示文章创建时间
+  createTime: true,
 
   /* 站点页脚 */
   // footer: {
@@ -27,6 +25,6 @@ export default defineThemeConfig({
   //   copyright: "",
   // },
 
-  navbar,
+  // navbar,
   collections,
 });
