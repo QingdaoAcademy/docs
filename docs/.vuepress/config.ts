@@ -1,6 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite';
 import { defineUserConfig } from 'vuepress';
 import { plumeTheme } from 'vuepress-theme-plume';
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
 
 export default defineUserConfig({
   base: '/',
@@ -107,4 +108,9 @@ export default defineUserConfig({
       inputPosition: 'top',
     },
   }),
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-F7KR87K6PD',
+    }),
+  ],
 });
