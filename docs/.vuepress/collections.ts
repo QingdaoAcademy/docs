@@ -56,16 +56,19 @@ export default defineCollections([
     linkPrefix: '/env-configuration',
     title: '开发环境配置',
     sidebar: [
-      { text: 'Python', link: 'https://python.yxzl.dev/jvvxy8eb/' },
+      '',
       {
-        text: 'C++',
+        text: 'Python',
         items: [
-          'mingw64',
           {
-            text: 'VS Code 配置',
-            link: '/vscode/y0zhl0fe/',
+            text: 'Python 环境配置',
+            link: 'https://python.yxzl.dev/jvvxy8eb/',
           },
         ],
+      },
+      {
+        text: 'C++',
+        items: ['mingw64'],
       },
     ],
   }),

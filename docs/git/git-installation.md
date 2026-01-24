@@ -21,7 +21,7 @@ permalink: /git/iz82rpx8/
 
 @tab MacOS
 
-一般来讲， MacOS 自带了 Git，你可以在终端[+terminal]中执行
+一般来讲， MacOS 自带了 Git，你可以在终端（即[命令行](/cli/)）中执行
 
 ```bash
 git --version
@@ -30,23 +30,17 @@ git --version
 
 如果已有 Git，此命令会输出版本号；
 
-如果没有，理论上，MacOS 会提示你安装 Xcode 命令行工具[+Xcode]，从而自动安装 Git
+如果没有，理论上，MacOS 会提示你安装 Xcode 命令行工具，从而自动安装 Git。
 
-我不保证这不会出现意外（但应该不会），如果 MacOS 并没有为你自动安装 Git，你可以参考以下步骤手动安装：
+==当且仅当上述步骤均不成功的时候==，你可以参考以下步骤手动安装：
 
   ::: steps
 
   1. 安装 Homebrew
 
-  > [!INFO]
-  >
-  > Homebrew 是 MacOS 上主流的的包管理器
-  >
-  > 包管理器是一个工具，允许用户安装、删除、升级、配置和管理软件包，你可以简单理解为这是一个应用下载器；
-  >
-  > 现在你不必纠结于此[+note1]，在你学习更深入后 **无法避免** 安装 Homebrew 或其它例如 Nix 的工具。
+  Homebrew 是 MacOS 上主流的的[包管理器](/dictionary/lbigvoxp/)。
 
-  ==如果你的电脑现在可以顺利访问外网==，在终端中执行
+  ==如果你的电脑现在可以顺利访问外网==，在[命令行](/cli/)中执行
 
   ```bash
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -70,7 +64,7 @@ git --version
 
   之后按照脚本指引操作即可。
 
-  2. 使用 Homebrew 安装 Git
+  1. 使用 Homebrew 安装 Git
 
   在终端中执行
 
@@ -95,32 +89,14 @@ sudo apt install git
 
 ## 检验 Git 已成功安装
 
-在终端[+terminal]中执行
+在命令行中执行
 
 ```bash
 git --version
 ```
 
-如果输出版本号，则说明安装成功
+如果输出版本号，则说明安装成功。
 
-[+terminal]:
-
-  在 Windows 中一般使用 cmd 应用；
-
-  在 MacOS 中使用 terminal（终端） 应用；
-
-  或更常用的，我们一般使用 vscode 中的终端。
-
-[+Xcode]: 
-
-  你目前不必在意这是什么。
-
-[+note1]: 
-
-  请相信我，Homebrew 是目前最适合你的包管理器。
-  
-  在你需要接触到例如 Nix 时自然会懂得如何更改它，且你不会后悔使用过 Homebrew。
-
-[+tuna]: 
+[+tuna]:
 
   清华复制了不少主流软件的镜像到国内的服务器上，方便用户进行快速下载。

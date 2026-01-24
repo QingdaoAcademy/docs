@@ -79,5 +79,5 @@ permalink: /vscode/rcgpbdlp/
 
 - 了解如何配置特定的编程语言
   - [Python](./python.md)
-  - C++
+  - [C++](./cpp.md)
 - [了解如何使用 VS Code 进行版本控制（Git）](/git/zzeqw9x5/)

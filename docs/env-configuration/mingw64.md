@@ -1,5 +1,5 @@
 ---
-title: MingW64 g++ 环境配置
+title: MingW64 环境配置
 createTime: 2025/10/23 12:49:45
 permalink: /env-configuration/jxl5spat/
 ---
