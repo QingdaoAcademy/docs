@@ -4,19 +4,26 @@ createTime: 2025/10/23 11:33:31
 permalink: /vscode/34n3lfdz/
 ---
 
+在阅读这部分内容以前，==请务必确保你已经阅读并熟练掌握了[命令行教程](/cli/)中的基础内容==。
+
 在 VS Code 中，你可以使用内置的终端（Terminal）来访问命令行工具，如 Windows 的 cmd、PowerShell，或 MacOS 和 Linux 的 bash、zsh 等。
 
 ## 打开终端
 
 你可以通过以下方式打开终端：
-- 顶部菜单栏的“终端”->“新建终端”
-- 快捷键 ``` Ctrl + Shift + ` ``` （Mac 为 ``` control + shift + ` ```）
+1. 顶部菜单栏的“终端”->“新建终端”
+2. 快捷键 ``` Ctrl + Shift + ` ``` （Mac 为 ``` control + shift + ` ```）
+    ::: warning
+    Mac 系统上的此快捷键有时不会生效，此时请你尝试使用第一种方式打开。
+    ::: 
 
   ![](../images/1761190777834.png)
 
 ## 切换终端类型
 
-对于 Windows 用户，VS Code 默认打开 PowerShell 终端。如果你想使用 cmd 终端，可以点击终端右上角的下拉箭头，然后选择 `Command Prompt`。你也可以通过“选择默认配置文件”（Select Default Profile）设置默认值。
+==此部分内容仅针对 Windows 用户。==
+
+VS Code 默认打开 PowerShell 终端。如果你想使用 cmd 终端，可以点击终端右上角的下拉箭头，然后选择 `Command Prompt`。你也可以通过“选择默认配置文件”（Select Default Profile）设置默认值。
 
 ![图片来源：菜鸟教程](../images/1761193475968.png)
 

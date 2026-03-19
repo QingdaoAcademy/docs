@@ -1,20 +1,19 @@
 ---
-title: GitHub 简介
+title: GitHub 注册和 SSH 密钥配置
 createTime: 2025/10/21 18:44:29
 permalink: /git/h0r3hpd9/
 ---
 
-## 前置工作
+## 确保网络连通性
 
 如果你在尝试本节所介绍的内容时，遇到卡死或与网络有关的报错，请回来阅读这部分内容。
 
-### 确保网络连通性
+由于中国政府对人民“母亲般的呵护”，你很可能无法正常连接 GitHub。如果你使用浏览器访问 <https://github.com/> 会报错（如“连接已重置”）或速度极慢，请考虑使用魔法工具帮助你的访问。请自行联系你的朋友获取相关工具。
 
-由于中国政府对人民如母亲般的呵护，你可能无法正常连接 GitHub。如果你访问 <https://github.com/> 会报错（如“连接已重置”）或速度极慢，请考虑使用特殊工具帮助你的访问。请自行联系你的朋友获取相关工具。
+如果你正在使用 Clash 等基于系统代理的魔法工具，考虑执行如下步骤以提高连接成功率。
 
-### 如果你正在使用 Clash 等工具
+:::: details 为 SSH 配置 HTTPS 端口
 
-考虑执行如下代码以提高连接 GitHub 的成功率。
 
 ::: tabs
 @tab Windows
@@ -45,15 +44,23 @@ mkdir -p ~/.ssh && echo -e "Host github.com\n    Hostname ssh.github.com\n    Po
 
 :::
 
-关于这一配置的更多信息，参阅[在 HTTPS 端口使用 SSH - GitHub 文档](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)。
+关于这一配置的更多信息，参阅 [在 HTTPS 端口使用 SSH - GitHub 文档](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)。
+
+::::
 
 ## 注册 GitHub 账号
 
-前往<https://github.com/signup>，按照提示完成注册流程。
+前往 <https://github.com/signup>，按照提示完成注册流程。
 
-建议使用 Gmail 邮箱注册，使用 163 等国内邮箱可能会出现无法通过人机验证的问题。
+建议使用 Gmail 邮箱注册。==已知使用 163 邮箱可能会出现无法通过人机验证的问题。==
 
 ## 配置 SSH Key
+
+==请务必仔细阅读这部分内容。==
+
+==请务必仔细阅读这部分内容。==
+
+==请务必仔细阅读这部分内容。==
 
 配置 SSH Key 是将代码上传到远程服务器的必要步骤。
 
@@ -64,10 +71,15 @@ mkdir -p ~/.ssh && echo -e "Host github.com\n    Hostname ssh.github.com\n    Po
 
 按下快捷键 `Win + R`，在打开的“运行”窗口中输入 cmd 并点击确定，打开命令行窗口。
 
-在命令行中==依次==、==逐行==执行如下命令（在执行第一行命令时请==删除提示文本、输入你自己的邮箱==；按下回车后会有若干次提示输入，请==不断回车跳过相关输入==）：
+在命令行中执行如下命令：请==将提示文本替换为你自己的邮箱==；按下回车后会有若干次提示输入，请==不要输入任何内容==，==不断回车跳过相关输入==。
 
 ```bash
 ssh-keygen -t ed25519 -C "在此输入你的邮箱"
+```
+
+当一个以 ```+----[SHA256]----+``` 结尾的提示出现时，说明 SSH Key 已经生成成功。接下来执行如下命令：
+
+```bash
 cd .ssh
 type id_ed25519.pub
 ```
@@ -76,24 +88,25 @@ type id_ed25519.pub
 
 ![](../images/h0r3hpd9/image-1.png)
 
-==最后一行的内容就是你的公钥信息。==
-
 @tab MacOS
 
 在启动台或 SpotLight（通过 `Command + 空格` 打开）搜索 Terminal 并打开。
 
-在命令行界面中，==依次==、==逐行==执行如下命令（在执行第一行命令时请==删除提示文本、输入你自己的邮箱==；按下回车后会有若干次提示输入，请==不断回车跳过相关输入==）：
+在命令行中执行如下命令：请==将提示文本替换为你自己的邮箱==；按下回车后会有若干次提示输入，请==不要输入任何内容==，==不断回车跳过相关输入==。
 
 ```bash
 ssh-keygen -t ed25519 -C "在此输入你的邮箱"
+```
+
+当一个以 ```+----[SHA256]----+``` 结尾的提示出现时，说明 SSH Key 已经生成成功。接下来执行如下命令：
+
+```bash
 cat ~/.ssh/id_ed25519.pub
 ```
 
 理想情况下，你将得到如下图所示的结果：
 
 ![](../images/h0r3hpd9/image-2.png)
-
-==最后一行的内容就是你的公钥信息。==
 
 @tab Linux
 
@@ -102,6 +115,8 @@ cat ~/.ssh/id_ed25519.pub
 **更加原则上讲，如果你已经在使用 Linux，你不应该需要阅读这部分 Git 教程。**
 
 :::
+
+==最后一行的内容就是你的公钥信息。==
 
 ### 将公钥上传到 GitHub
 
@@ -113,51 +128,7 @@ cat ~/.ssh/id_ed25519.pub
 
 当完成上述步骤后请点击提交，根据提示完成身份验证即可看到成功提示。
 
-## 创建 GitHub 仓库
 
-要将代码存储到 GitHub 上，你需要先创建一个仓库。
-
-你可以访问 <https://github.com/new> 来创建一个新仓库。你可以使用任意字母和数字来命名你的仓库，并设置可见性。
-
-创建好仓库后，你应该会看到这样的页面：
-
-![](../images/h0r3hpd9/image-3.png)
-
-红色箭头所指的即为==你的仓库地址==。
-
-## 将本地仓库推送到 GitHub
-
-> [!NOTE]
->
-> 接下来的步骤涉及 Git 命令，请先阅读前置章节 [Git 的基础操作](./git-basics.md)
-
-打开命令行工具并进入你==已有的本地仓库所在目录==，执行如下代码：
-
-```bash
-git remote add origin 你的仓库地址
-git push --set-upstream origin main
-```
-
-（如果你的分支名称不是 main，请自行修改）
-
-当推送完成后，你的 GitHub 仓库页面会变成类似下面这样：
-
-![](../images/h0r3hpd9/image-4.png)
 
 有关更多的同步选项和冲突管理，请见 [VS Code 远程管理](./git-with-vscode.md#远程管理)。
 
-## 克隆 GitHub 仓库
-
-对于任意一个公开的 GitHub 仓库，我们都可以通过下图所示的方式找到这个仓库的地址。
-
-![](../images/h0r3hpd9/image-5.png)
-
-请注意，对于自己没有完整权限的仓库，你应当使用 HTTPS 链接（而非 SSH 链接）来克隆。
-
-打开命令行工具，将目录切换到切换到你希望保存代码的位置，输入下方命令并执行，即可将代码克隆到本地。Git 工具在克隆时会自动创建一个新文件夹来存储代码，你无需手动创建。
-
-```bash
-git clone 你要克隆的仓库地址
-```
-
-![](../images/h0r3hpd9/image-6.png)

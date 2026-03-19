@@ -12,6 +12,8 @@ export default defineCollections([
       'git-installation',
       'git-basics',
       'github-overview',
+      'push-to-github',
+      'clone-from-github',
       'git-with-vscode',
     ],
   }),
