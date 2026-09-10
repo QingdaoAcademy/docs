@@ -37,6 +37,11 @@ config:
         details: 配置开发环境的指南
         link: /env-configuration/
       -
+        title: AI 和 Agent
+        icon: thesvg:codex-openai
+        details: 大模型和 Agent
+        link: /ai/
+      -
         title: Python
         icon: material-icon-theme:python
         details: 编程入门首选语言

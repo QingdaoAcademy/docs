@@ -74,4 +74,15 @@ export default defineCollections([
       },
     ],
   }),
+  defineCollection({
+    type: 'doc',
+    dir: 'ai',
+    linkPrefix: '/ai',
+    title: 'AI 和 Agent',
+    sidebar: [
+      '',
+      'opencode',
+      'cc-switch',
+    ],
+  }),
 ]);
